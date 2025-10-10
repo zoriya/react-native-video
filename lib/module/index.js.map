@@ -1,0 +1,1 @@
+{"version":3,"names":["useEvent","useVideoPlayer","VideoPlayer","default","VideoView"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":";;AAAA,SAASA,QAAQ,QAAQ,0BAAuB;AAChD,SAASC,cAAc,QAAQ,gCAA6B;AAoB5D,SAASC,WAAW,QAAQ,oBAAoB;AAChD,SAASC,OAAO,IAAIC,SAAS,QAAQ,6BAA6B","ignoreList":[]}

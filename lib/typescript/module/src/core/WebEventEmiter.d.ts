@@ -1,0 +1,45 @@
+import type { BandwidthData, onLoadData, onLoadStartData, onPlaybackStateChangeData, onProgressData, onVolumeChangeData, AllPlayerEvents as PlayerEvents, TimedMetadata } from "./types/Events";
+import type { TextTrack } from "./types/TextTrack";
+import type { VideoRuntimeError } from "./types/VideoError";
+import type { VideoPlayerStatus } from "./types/VideoPlayerStatus";
+export declare class WebEventEmiter implements PlayerEvents {
+    private video;
+    private _isBuferring;
+    constructor(video: HTMLVideoElement);
+    destroy(): void;
+    _onTimeUpdate(): void;
+    _onCanPlay(): void;
+    _onWaiting(): void;
+    _onDurationChange(): void;
+    _onEnded(): void;
+    _onLoadStart(): void;
+    _onPlay(): void;
+    _onPause(): void;
+    _onRateChange(): void;
+    _onLoadedData(): void;
+    _onSeeked(): void;
+    _onVolumeChange(): void;
+    _onError(): void;
+    NOOP: () => void;
+    onError: (error: VideoRuntimeError) => void;
+    onAudioBecomingNoisy: () => void;
+    onAudioFocusChange: (hasAudioFocus: boolean) => void;
+    onBandwidthUpdate: (data: BandwidthData) => void;
+    onBuffer: (buffering: boolean) => void;
+    onControlsVisibleChange: (visible: boolean) => void;
+    onEnd: () => void;
+    onExternalPlaybackChange: (externalPlaybackActive: boolean) => void;
+    onLoad: (data: onLoadData) => void;
+    onLoadStart: (data: onLoadStartData) => void;
+    onPlaybackStateChange: (data: onPlaybackStateChangeData) => void;
+    onPlaybackRateChange: (rate: number) => void;
+    onProgress: (data: onProgressData) => void;
+    onReadyToDisplay: () => void;
+    onSeek: (seekTime: number) => void;
+    onTimedMetadata: (metadata: TimedMetadata) => void;
+    onTextTrackDataChanged: (texts: string[]) => void;
+    onTrackChange: (track: TextTrack | null) => void;
+    onVolumeChange: (data: onVolumeChangeData) => void;
+    onStatusChange: (status: VideoPlayerStatus) => void;
+}
+//# sourceMappingURL=WebEventEmiter.d.ts.map

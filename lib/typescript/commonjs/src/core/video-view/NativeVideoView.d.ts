@@ -1,0 +1,2 @@
+export declare const NativeVideoView: import("react-native/Libraries/Utilities/codegenNativeComponent").NativeComponentType<import("../../spec/fabric/VideoViewNativeComponent").ViewViewNativeProps> | (() => never);
+//# sourceMappingURL=NativeVideoView.d.ts.map
